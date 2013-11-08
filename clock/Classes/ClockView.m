@@ -149,9 +149,9 @@ float Degrees2Radians(float degrees) { return degrees * M_PI / 180; }
     minHand.shouldRasterize = YES;
     secHand.shouldRasterize = YES;
 
-    hourHand.rasterizationScale = 2.0f;
-    minHand.rasterizationScale = 2.0f;
-    secHand.rasterizationScale = 2.0f;
+    hourHand.rasterizationScale = [[UIScreen mainScreen] scale];
+    minHand.rasterizationScale = [[UIScreen mainScreen] scale];
+    secHand.rasterizationScale = [[UIScreen mainScreen] scale];
 
     hourHand.shadowOpacity = 0.01f;
     minHand.shadowOpacity = 0.01f;
