@@ -30,6 +30,8 @@
 - (void)setSecHandImage:(CGImageRef)image;
 - (void)setClockBackgroundImage:(CGImageRef)image;
 
+- (void)updateToDate:(NSDate *)date;
+
 //to customize hands size: adjust following values in .m file
 //HOURS_HAND_LENGTH
 //MIN_HAND_LENGTH
